@@ -36,6 +36,9 @@ while True:
  if ack:
  print(ack)
  i+=s
+ 
+```
+```
 SERVER:
 import socket
 s=socket.socket()
