@@ -1,11 +1,11 @@
 # EX-2 IMPLEMENTATION OF STOP AND WAIT PROTOCOL
 
-DATE: 13/03/23
+#DATE: 13/03/23
 
-AIM : To write a python program to perform sliding window protocol
+#AIM : To write a python program to perform sliding window protocol
 
 
-ALGORITHM :
+#ALGORITHM :
 ```
 1. Start the program.
 2. Get the frame size from the user
@@ -15,9 +15,9 @@ ALGORITHM :
 will send NACKsignal to client.
 6. Stop the program
 ```
-PROGRAM :
+#PROGRAM :
 ```
-CLIENT:
+#CLIENT:
 import socket
 s=socket.socket()
 s.bind(('localhost',8000))
@@ -39,7 +39,7 @@ while True:
  
 ```
 ```
-SERVER:
+#SERVER:
 import socket
 s=socket.socket()
 s.connect(('localhost',8000))
@@ -49,17 +49,19 @@ while True:
  s.send("acknowledgement recived from the server".encode())
  ```
 
-OUTPUT :
+#OUTPUT :
 
-CLIENT OUTPUT :
+#CLIENT OUTPUT :
 ![Screenshot (48)](https://github.com/ArpanBardhan/EX-2/assets/119405037/41129eb9-3323-4b33-976f-374ba3b8ef56)
 
-SERVER OUTPUT :
+#SERVER OUTPUT :
 ![Screenshot (49)](https://github.com/ArpanBardhan/EX-2/assets/119405037/50302d3b-4253-4a52-81d9-64f6deab0bcc)
 
 
 
-RESULT : Thus, python program to perform stop and wait protocol was successfully executed.
+#RESULT : 
+
+Thus, python program to perform stop and wait protocol was successfully executed.
 
 
 
