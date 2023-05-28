@@ -4,7 +4,6 @@
 
 # AIM : To write a python program to perform sliding window protocol
 
-
 # ALGORITHM :
 ```
 1. Start the program.
@@ -16,7 +15,6 @@ will send NACKsignal to client.
 6. Stop the program
 ```
 # PROGRAM :
-
 # CLIENT PROGRAM:
 ```
 import socket
@@ -49,15 +47,11 @@ while True:
  print(s.recv(1024).decode())
  s.send("acknowledgement recived from the server".encode())
  ```
-
 # OUTPUT :
-
 # CLIENT OUTPUT :
 ![Screenshot (48)](https://github.com/ArpanBardhan/EX-2/assets/119405037/41129eb9-3323-4b33-976f-374ba3b8ef56)
-
 # SERVER OUTPUT :
 ![Screenshot (49)](https://github.com/ArpanBardhan/EX-2/assets/119405037/50302d3b-4253-4a52-81d9-64f6deab0bcc)
-
 
 
 # RESULT : 
