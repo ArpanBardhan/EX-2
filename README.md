@@ -19,7 +19,6 @@ will send NACKsignal to client.
 
 # CLIENT PROGRAM:
 ```
-CLIENT:
 import socket
 s=socket.socket()
 s.bind(('localhost',8000))
@@ -42,7 +41,6 @@ while True:
 ```
 # SERVER PROGRAM:
 ```
-#SERVER:
 import socket
 s=socket.socket()
 s.connect(('localhost',8000))
