@@ -47,7 +47,7 @@ while True:
 # CLIENT OUTPUT :
 ![Screenshot (44)](https://github.com/ArpanBardhan/EX-2/assets/119405037/613a248f-1c3b-4ece-b38f-0e944e3781b3)
 
-
+![output](./file:///C:/Users/SEC/Pictures/Screenshots/Screenshot%20(95))
 # SERVER OUTPUT :
 ![Screenshot (45)](https://github.com/ArpanBardhan/EX-2/assets/119405037/613a248f-1c3b-4ece-b38f-0e944e3781b3)
 
