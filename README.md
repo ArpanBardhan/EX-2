@@ -3,9 +3,10 @@
 # DATE: 13/03/23
 
 # AIM : 
-To write a python program to perform sliding window protocol
+To write a python program to perform stop and wait protocol
 
 # ALGORITHM :
+```
 1. Start the program.
 2. Get the frame size from the user
 3. To create the frame based on the user request.
@@ -13,6 +14,7 @@ To write a python program to perform sliding window protocol
 5. If your frames reach the server it will send ACK signal to client otherwise it
 will send NACKsignal to client.
 6. Stop the program
+```
 # PROGRAM :
 # CLIENT PROGRAM:
 ```
@@ -21,37 +23,32 @@ s=socket.socket()
 s.bind(('localhost',8000))
 s.listen(5)
 c,addr=s.accept()
-size=int(input("Enter number of frames to send : "))
-l=list(range(size))
-s=int(input("Enter Window Size : "))
-st=0
-i=0
 while True:
- while(i<len(l)):
- st+=s
- c.send(str(l[i:st]).encode())
+ i=input("Enter a data: ")
+ c.send(i.encode())
  ack=c.recv(1024).decode()
  if ack:
  print(ack)
- i+=s
- 
+ continue
+ else:
+ c.close()
+ break
 ```
 # SERVER PROGRAM:
 ```
 import socket
 s=socket.socket()
 s.connect(('localhost',8000))
-REG NO:
-while True: 
+while True:
  print(s.recv(1024).decode())
- s.send("acknowledgement recived from the server".encode())
+ s.send("Acknowledgement Recived".encode())
  ```
 # OUTPUT :
 # CLIENT OUTPUT :
-![Screenshot (48)](https://github.com/ArpanBardhan/EX-2/assets/119405037/41129eb9-3323-4b33-976f-374ba3b8ef56)
-# SERVER OUTPUT :
-![Screenshot (49)](https://github.com/ArpanBardhan/EX-2/assets/119405037/50302d3b-4253-4a52-81d9-64f6deab0bcc)
+![Uploading Screenshot (44).png…]()
 
+# SERVER OUTPUT :
+![Screenshot (45)](https://github.com/ArpanBardhan/EX-2/assets/119405037/613a248f-1c3b-4ece-b38f-0e944e3781b3)
 
 # RESULT : 
 
