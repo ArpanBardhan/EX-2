@@ -17,7 +17,7 @@ will send NACKsignal to client.
 ```
 # PROGRAM :
 # CLIENT PROGRAM:
-```
+```PYTHON 3
 import socket
 s=socket.socket()
 s.bind(('localhost',8000))
@@ -28,14 +28,14 @@ while True:
  c.send(i.encode())
  ack=c.recv(1024).decode()
  if ack:
- print(ack)
- continue
+  print(ack)
+  continue
  else:
- c.close()
- break
+  c.close()
+  break
 ```
 # SERVER PROGRAM:
-```
+```PYTHON 3
 import socket
 s=socket.socket()
 s.connect(('localhost',8000))
